@@ -58,7 +58,7 @@ router.get('/verify-error',(req,res)=>{
             if(regex.findError(extractedText[i])){
                 res.status(200).json(
                     {
-                        sucess:true,msg:"Error on website is found. Raising issue to product team.Thankyou",
+                        success:false,msg:"Error on website is found. Raising issue to product team.Thankyou",
                         jiraCutomerCategory:"Error on Website",
                         jiraIssueSubCategory:"General Issues",
                         jiraIssueCategory:"Grip Invest"
