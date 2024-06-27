@@ -2,7 +2,7 @@ const Tesseract = require('tesseract.js')
 
 class ImageToText{
 
-    async extractTextFromBase64Image(byteData) {
+    static async extractTextFromBase64Image(byteData) {
         try {
             const { data } = await Tesseract.recognize(
                 byteData,
@@ -15,7 +15,7 @@ class ImageToText{
         }
     }
 
-    async imageToBase64(filePath) {
+    static async imageToBase64(filePath) {
         try {
             const data = await fs.readFile(filePath);
             const base64String = data.toString('base64');
@@ -28,4 +28,4 @@ class ImageToText{
 
 };
 
-module.exports = new ImageToText();
+module.exports = ImageToText;
