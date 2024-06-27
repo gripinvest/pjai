@@ -33,7 +33,7 @@ class Regex{
         const badGatewayError504 = /504 Gateway Time-out/
         const serviceTemporyUnAvailable = /503 Service Temporarily Unavailable/
         const badGatewayError502= /502 Bad Gateway/
-        return unhandledRegex.test(data)?true:categoryIDRegex.test(data)?true:someThingWentWrong.test(data)?true:TechnicalGlitchregex.test(data)?true:internalServerError.test(data)?true:badGatewayError504.test(data)?true:serviceTemporyUnAvailable.test(data)?true:badGatewayError502(data)?true:false;
+        return unhandledRegex.test(data)?true:categoryIDRegex.test(data)?true:someThingWentWrong.test(data)?true:TechnicalGlitchregex.test(data)?true:internalServerError.test(data)?true:badGatewayError504.test(data)?true:serviceTemporyUnAvailable.test(data)?true:badGatewayError502.test(data)?true:false;
     }
 
 }
