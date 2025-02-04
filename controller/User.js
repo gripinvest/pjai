@@ -79,7 +79,7 @@ router.post('/get-pii-data',(req,res)=>{
 
 
 
-router.post('/get-pii-data-update',(req,res)=>{
+router.post('/send-pii-data',(req,res)=>{
     const {email_id} =  req.body
     const data = {
         email_id
